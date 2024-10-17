@@ -11,16 +11,27 @@ const Introduction = () => {
 
     return (
         <div className='intro'>
-            <h1 style={{ margin: '0px', fontFamily: "'Bitter', serif", lineHeight: '1' }}>
+            <h1 style={{ margin: '0px', fontFamily: "'Bitter', serif", lineHeight: '1', fontSize: '60px' }}>
                 Hi, my
             </h1>
-            <h1 style={{ margin: '0', fontFamily: "'Bitter', serif", lineHeight: '1.2' }}>
+            <h1 style={{ margin: '0', fontFamily: "'Bitter', serif", lineHeight: '1.2', fontSize: '60px' }}>
                 name is{' '}
-                <span style={{ fontWeight: 'bold', color: '#DC143C', fontFamily: "'Kodchasan', sans-serif" }}>
+                <span style={{ fontWeight: 'bold', color: '#DC143C', fontFamily: "'Kodchasan', sans-serif", fontSize: '65px' }}>
                     {text}
                 </span>
                 <Cursor />
             </h1>
+            <div>
+                <span style={{ marginLeft: '0px', fontFamily: "'Bitter', serif", fontSize: '23px' }}>I am a {""}</span>
+                <h1 style={{ display: 'inline', margin: '0', fontFamily: "'Bitter', serif", fontSize: '25px', display: 'inline-block' }}>
+                    <strong>B.Tech Computer Science student</strong>
+                </h1>
+                <span style={{ marginLeft: '0px', fontFamily: "'Bitter', serif", fontSize: '23px' }}>passionate about innovation.</span>
+            </div>
+            <div className='main-logo'><img className='logo-set'
+                src="\images\logo3.png"
+            /></div>
+
         </div>
 
     );
