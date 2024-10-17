@@ -1,11 +1,34 @@
+import { useEffect, useState } from "react";
+
 const Header = () => {
+
+    const [scrolling, setScrolling] = useState(false);
+
+    // Check the scroll position
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            setScrolling(true);
+        } else {
+            setScrolling(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="navbar-container">
             <nav className="navbar navbar-expand-lg bg-body-tertiary header fixed-top">
                 <div className="container-fluid">
 
 
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <a className="navbar-brand" href="#">
+                        <div className={`harsh-logo ${scrolling ? 'scroll-logo' : ''}`}>
+                            <img className='logo-set1' src="\images\harshlogo.jpg" alt="Harsh Logo" /></div></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

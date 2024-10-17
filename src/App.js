@@ -6,6 +6,7 @@ import './App.css';
 import Header from './components/Header';
 import Introduction from './components/Introduction';
 import SideIcons from './components/SideIcons';
+import Footer from "./components/Footer";
 
 function App() {
   const circles = Array.from({ length: 10 });
@@ -44,6 +45,7 @@ function App() {
       <Header />
       <Introduction />
       <SideIcons />
+      <Footer></Footer>
     </div>
   );
 }

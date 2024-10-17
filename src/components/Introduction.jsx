@@ -1,5 +1,7 @@
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { PiArrowBendLeftUpFill } from "react-icons/pi";
+import Scrool from './Scrool';
 
 const Introduction = () => {
 
@@ -31,6 +33,9 @@ const Introduction = () => {
             <div className='main-logo'><img className='logo-set'
                 src="\images\logo3.png"
             /></div>
+            <div className='scrool'><Scrool></Scrool></div>
+            
+            
 
         </div>
 
