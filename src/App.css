@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+.full-body {
+    background-color: #F4F9FC;
+    width: 100%;
+    height: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-container {
+    padding: 15px;
+    /* Space around the navbar box */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+    border-radius: 11px;
+    /* Rounded corners for the navbar */
+    box-shadow: 4px 5px black;
+    border: 2px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Optional: Makes the logo round */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Basic button styling */
+.button-contact {
+    background-color: black;
+    /* Change to your desired background color */
+    color: #ffffff;
+    /* Change to your desired text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: background-color 0.9s ease;
+    /* Smooth transition */
+    height: 36px;
+    width: 130px;
+    margin-right: 5px;
 }
+
+
+.button-contact:hover {
+    background-color: yellow;
+    border-radius: 1px;
+
+}
+
+.icon-main {
+    width: 100px;
+    height: 400px;
+    float: right;
+    background-color: yellow;
+    margin-top: 170px;
+    ;
+}
+
+.icon-child {
+    width: 70%;
+    height: 60px;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* src/SocialIcons.css */
+
+.social-icons {
+    position: fixed;
+    /* Fixed position to stay on the right */
+    right: 35px;
+    /* Distance from the right */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust vertical alignment */
+    display: flex;
+    flex-direction: column;
+    /* Stack icons vertically */
+    gap: 15px;
+    /* Space between icons */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* Width of the icon container */
+    height: 50px;
+    /* Height of the icon container */
+    border-radius: 50%;
+    /* Makes the container round */
+    background-color: #f0f0f0;
+    /* Background color */
+    color: #333;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+    background-color: #ddd;
+    /* Change background color on hover */
+}
+
+.intro{
+    width:500px;
+    height:500px;
+    background-color: aqua;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
