@@ -44,7 +44,7 @@
     transition: background-color 0.9s ease;
     /* Smooth transition */
     height: 36px;
-    width: 130px;
+    width: 150px;
     margin-right: 5px;
 }
 
@@ -199,27 +199,181 @@ body {
 }
 
 .harsh-logo {
-    position: absolute; /* Position initially relative to the navbar */
-    top: 10px; /* Adjust vertical position */
-    left: 10px; /* Initial horizontal position in navbar */
-    transition: transform 0.3s ease, left 0.3s ease; /* Smooth transition for size and position change */
-    z-index: 1000; /* Ensure it stays on top */
+    position: absolute;
+    /* Position initially relative to the navbar */
+    top: 10px;
+    /* Adjust vertical position */
+    left: 10px;
+    /* Initial horizontal position in navbar */
+    transition: transform 0.3s ease, left 0.3s ease;
+    /* Smooth transition for size and position change */
+    z-index: 1000;
+    /* Ensure it stays on top */
 }
 
-.logo-set1{
-    height: 31px; /* Set a fixed height for the logo */
-    width: auto; /* Maintain aspect ratio */
+.logo-set1 {
+    height: 31px;
+    /* Set a fixed height for the logo */
+    width: auto;
+    /* Maintain aspect ratio */
     margin-right: 10px;
     border-radius: 50%;
 }
 
 .scroll-logo {
-    transform: scale(1.6); /* Increase size when scrolled */
+    transform: scale(1.6);
+    /* Increase size when scrolled */
     position: fixed;
-    left: 35px; /* Stick to the left corner */
-    top: 25px; /* Adjust the top position if needed */
+    left: 35px;
+    /* Stick to the left corner */
+    top: 25px;
+    /* Adjust the top position if needed */
 }
 
 .navbar-nav .nav-item {
-    margin-left: 15px; /* Add space between nav items if needed */
+    margin-left: 15px;
+    /* Add space between nav items if needed */
 }
+
+.card-aboutme {
+    max-width: 900px;
+    /* Set maximum width */
+    height: 400px;
+    /* Set fixed height */
+    margin: 20px auto;
+    /* Center the card */
+    border: 1px solid #2c7da5;
+    /* Add a border */
+    border-radius: 10px;
+    /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    /* Add shadow */
+    transition: box-shadow 0.8s ease;
+    margin-left: 40px;
+}
+
+
+.card-aboutme img {
+    height: 80%;
+    /* Ensure the image takes the full height */
+    width: 300px;
+    /* Maintain aspect ratio */
+    border-radius: 22px;
+    /* Round corners of the image */
+}
+
+.arrow-aboutme {
+    background: transparent;
+    width: 250px;
+    height: 250px;
+    margin-left: 1000px;
+    margin-top: -700px;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.arrow-main {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.custom-one {
+    margin-left: 300px;
+
+}
+
+.custom-two {
+    margin-left: 40px;
+}
+
+.custom-three {
+    margin-left: 300px;
+}
+
+.card-skill {
+    max-width: 900px;
+    /* Set maximum width */
+    height: 400px;
+    /* Set fixed height */
+    margin: 20px auto;
+    /* Center the card */
+    border: 1px solid #2c7da5;
+    /* Add a border */
+    border-radius: 10px;
+    /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    /* Add shadow */
+    transition: box-shadow 0.8s ease;
+    margin-left: 350px;
+}
+
+
+.arrow-card-skill {
+    background: transparent;
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-top: -450px;
+    transform: rotate(360deg) scaleX(-1);
+}
+
+.arrow-main-intern {
+    width: 100px;
+    height: 100px;
+}
+
+.card-skill img {
+    height: 400px;
+    /* Ensure the image takes the full height */
+    width: 300px;
+    /* Maintain aspect ratio */
+    border-radius: 22px;
+    /* Round corners of the image */
+}
+
+
+
+
+
+.card-experience {
+    max-width: 900px;
+    /* Set maximum width */
+    height: 400px;
+    /* Set fixed height */
+    margin: 20px auto;
+    /* Center the card */
+    border: 1px solid #2c7da5;
+    /* Add a border */
+    border-radius: 10px;
+    /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    /* Add shadow */
+    transition: box-shadow 0.8s ease;
+    margin-left: 40px;
+}
+
+.arrow-experience {
+    background: transparent;
+    width: 250px;
+    height: 250px;
+    margin-left: 980px;
+    margin-top: -500px;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.card-experience img {
+    height: 90%;
+    /* Ensure the image takes the full height */
+    width: 150px;
+    /* Maintain aspect ratio */
+    border-radius: 22px;
+    margin-left: -30px;
+    margin-top: -60px;
+}
+
+
+
+
+
+

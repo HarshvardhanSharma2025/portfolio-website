@@ -7,6 +7,10 @@ import Header from './components/Header';
 import Introduction from './components/Introduction';
 import SideIcons from './components/SideIcons';
 import Footer from "./components/Footer";
+import Aboutme from "./components/Aboutme";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Skill from "./components/Skill";
 
 function App() {
   const circles = Array.from({ length: 10 });
@@ -45,6 +49,10 @@ function App() {
       <Header />
       <Introduction />
       <SideIcons />
+      <Aboutme/>
+      <Skill></Skill>
+      <Experience/>
+      <Projects/>
       <Footer></Footer>
     </div>
   );

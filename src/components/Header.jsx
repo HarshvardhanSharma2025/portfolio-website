@@ -38,15 +38,21 @@ const Header = () => {
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="#">About Me</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                                <a className="nav-link disabled" aria-disabled="true">Skills or Projects</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link disabled" aria-disabled="true">Resume</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link disabled" aria-disabled="true">Contact</a>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="button-contact" type="submit">Contact</button>
+                            <button className="button-contact" type="submit">Contact Me</button>
                         </form>
                     </div>
                 </div>
