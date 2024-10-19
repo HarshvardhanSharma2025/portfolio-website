@@ -5,19 +5,19 @@ const MainContent = () => {
         <main>
             <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
                 <div className="col-md-6 p-lg-5 mx-auto my-5">
-                    <h1 className="display-3 fw-bold">Designed for engineers</h1>
+                    <h1 className="display-3 fw-bold">"My Digital Creations Portfolio"</h1>
                     <h3 className="fw-normal text-muted mb-3">
-                        Build anything you want with Aperture
+                        Check out the projects 
                     </h3>
                     <div className="d-flex gap-3 justify-content-center lead fw-normal">
                         <a className="icon-link" href="#">
-                            Learn more
+                        Read more
                             <svg className="bi">
                                 <use xlinkHref="#chevron-right" />
                             </svg>
                         </a>
                         <a className="icon-link" href="#">
-                            Buy
+                        Contact
                             <svg className="bi">
                                 <use xlinkHref="#chevron-right" />
                             </svg>

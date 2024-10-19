@@ -291,50 +291,119 @@ body {
     margin-left: 300px;
 }
 
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Card Skill Styling */
 .card-skill {
-    max-width: 900px;
-    /* Set maximum width */
-    height: 400px;
-    /* Set fixed height */
+    max-width: 1000px;
+    height: 460px; /* Adjust height */
     margin: 20px auto;
-    /* Center the card */
-    border: 1px solid #2c7da5;
-    /* Add a border */
+    border: 1px solid black;
     border-radius: 10px;
-    /* Round corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    /* Add shadow */
-    transition: box-shadow 0.8s ease;
-    margin-left: 350px;
+    transition: box-shadow 2s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 260px;
+    margin-bottom: 130px;
+}
+
+/* Skill Category */
+.skill-category {
+    margin-top: 15px;
+}
+
+/* Skill Heading */
+.skill-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#454545;
+    margin-bottom: 10px;
+}
+
+/* Skill Items Container */
+.skill-items-container {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scrollRight 15s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+@keyframes scrollRight {
+    
+    25% {
+        transform: translateX(50%) scale(1.1); /* Slightly zoomed in */
+    }
+    50% {
+        transform: translateX(0%) scale(1); /* Back to normal size */
+    }
+    75% {
+        transform: translateX(-1%) scale(0.9); /* Slight shrink */
+    }
+    100% {
+        transform: translateX(-1%) scale(1); /* End outside, normal size */
+    }
 }
 
 
-.arrow-card-skill {
-    background: transparent;
-    width: 250px;
-    height: 250px;
-    margin-left: 60px;
-    margin-top: -450px;
-    transform: rotate(360deg) scaleX(-1);
+/* Skill Item Box */
+.skill-item {
+    background-color: #808080;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: background-color 0.5s, transform 0.3s;
 }
 
-.arrow-main-intern {
-    width: 100px;
-    height: 100px;
+/* Hover Effect for Skill Item */
+.skill-item:hover {
+    background-color: #566573  ;
+    
+    transform: scale(1.1);
 }
 
-.card-skill img {
-    height: 400px;
-    /* Ensure the image takes the full height */
-    width: 300px;
-    /* Maintain aspect ratio */
+/* Skill Logo Styling */
+.skill-logo {
+    height: 100%;
+    width: 100%;
     border-radius: 22px;
-    /* Round corners of the image */
+}
+
+
+.arrow-card-skill{
+    width:200px;
+    height:250px;
+    margin-top: 200px;
+    margin-left: 30px;
+    
+    transform: rotate(360deg) scaleX(-1);
+
+}
+
+.arrow-main-intern{
+    width:200px;
+    height: 100px;
+    margin-top: -100px;
+
 }
 
 
 
-
+/*-----------------------------------------------------------------------------------------*/
 
 .card-experience {
     max-width: 900px;
@@ -350,30 +419,69 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     /* Add shadow */
     transition: box-shadow 0.8s ease;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 
 .arrow-experience {
     background: transparent;
     width: 250px;
     height: 250px;
-    margin-left: 980px;
+    margin-left: 1010px;
     margin-top: -500px;
     transform: rotate(180deg) scaleX(-1);
 }
 
 .card-experience img {
-    height: 90%;
+    height: 42%;
     /* Ensure the image takes the full height */
     width: 150px;
     /* Maintain aspect ratio */
     border-radius: 22px;
     margin-left: -30px;
-    margin-top: -60px;
+    margin-top: -50px;
+}
+
+.intern-title{
+    width:150px;
+    height: 30px;
+    font-size: 30px;
+    margin-left: 270px;
+    font-weight:bolder;
+}
+
+.intern-shirram{
+    height: 50px;
+font-size: 20px;
+margin-left: 150px;
+margin-top: -20px;
+}
+
+.intern-date{
+
+    height: 50px;
+font-size: 20px;
+margin-left: 356px;
+margin-top: -30px;
+}
+
+.iconintern{
+    color: #2c7da5;
+    margin-right: 10px;
+}
+.responsibilities-title{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.icontech{
+    color: #2c7da5;
+    margin-right: 10px;
 }
 
 
-
-
-
-
+.display-3 {
+    
+    width: 1000px;
+    margin-left: -240px;
+}
