@@ -41,13 +41,13 @@ const Header = () => {
                                 <a className="nav-link" href="#">About Me</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" aria-disabled="true">Skills or Projects</a>
+                                <a className="nav-link active" aria-disabled="true">Skills or Projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" aria-disabled="true">Resume</a>
+                                <a className="nav-link active" aria-disabled="true">Resume</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" aria-disabled="true">Contact</a>
+                                <a className="nav-link active" aria-disabled="true">Contact</a>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">

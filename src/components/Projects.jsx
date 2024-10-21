@@ -1,6 +1,42 @@
 import React from 'react';
+import Section from './Section';
 
 const MainContent = () => {
+
+
+
+
+    const sectionsData = [
+        {
+            bgClass: "text-bg-dark",
+            shadowClass: "bg-body-tertiary",
+            headline: "Calculator",
+            subheading: "A simple calculator to make your calculations easy.."
+        },
+        {
+            bgClass: "bg-body-tertiary",
+            shadowClass: "bg-dark",
+            headline: "Project 2",
+            subheading: "A description of the second project."
+        },
+        {
+            bgClass: "bg-body-tertiary",
+            shadowClass: "bg-dark",
+            headline: "Project 3",
+            subheading: "A description of the third project."
+        },
+        {
+            bgClass: "text-bg-dark",
+            shadowClass: "bg-body-tertiary",
+            headline: "Project 4",
+            subheading: "A description of the fourth project."
+        }
+    ];
+
+    
+
+
+
     return (
         <main>
             <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
@@ -29,66 +65,19 @@ const MainContent = () => {
             </div>
 
             <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 custom-one">
-                <Section
-                    bgClass="text-bg-dark"
-                    shadowClass="bg-body-tertiary"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
-                <Section
-                    bgClass="bg-body-tertiary"
-                    shadowClass="bg-dark"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
+                {sectionsData.slice(0, 2).map((section, index) => (
+                    <Section key={index} bgClass={section.bgClass} shadowClass={section.shadowClass} headline={section.headline} subheading={section.subheading} />
+                ))}
             </div>
 
             <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 custom-two">
-
-                <Section
-                    bgClass="bg-body-tertiary"
-                    shadowClass="bg-dark"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
-
-                <Section
-                    bgClass="text-bg-dark"
-                    shadowClass="bg-body-tertiary"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
-            </div>
-
-            <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 custom-three">
-                <Section
-                    bgClass="text-bg-dark"
-                    shadowClass="bg-body-tertiary"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
-                <Section
-                    bgClass="bg-body-tertiary"
-                    shadowClass="bg-dark"
-                    headline="Another headline"
-                    subheading="And an even wittier subheading."
-                />
+                {sectionsData.slice(2, 4).map((section, index) => (
+                    <Section key={index} bgClass={section.bgClass} shadowClass={section.shadowClass} headline={section.headline} subheading={section.subheading} />
+                ))}
             </div>
         </main>
     );
 };
 
-const Section = ({ bgClass, shadowClass, headline, subheading }) => (
-    <div className={`${bgClass} me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden`}>
-        <div className="my-3 p-3">
-            <h2 className="display-5">{headline}</h2>
-            <p className="lead">{subheading}</p>
-        </div>
-        <div
-            className={`${shadowClass} shadow-sm mx-auto`}
-            style={{ width: '80%', height: '300px', borderRadius: '21px 21px 0 0' }}
-        ></div>
-    </div>
-);
 
 export default MainContent;

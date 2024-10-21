@@ -13,6 +13,7 @@ import Experience from "./components/Experience";
 import Skill from "./components/Skill";
 import Intern from "./components/Intern";
 import ProjectsShowcase from "./components/ProjectsShowcase";
+import Projectdemo from "./components/Projectdemo";
 
 function App() {
   const circles = Array.from({ length: 10 });
@@ -58,6 +59,7 @@ function App() {
       <Intern/>
       <ProjectsShowcase/>
       <Footer></Footer>
+      <Projectdemo/>
     </div>
   );
 }
